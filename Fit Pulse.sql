@@ -21,7 +21,6 @@ create table if not exists aluno (
     data_nascimento_aluno date not null,
     data_inscricao date not null,
     senha_aluno varchar(100) not null,
-    endereco_aluno varchar(100) not null,
     genero_aluno varchar(10) not null,
     id_plano varchar(1) not null,
     
