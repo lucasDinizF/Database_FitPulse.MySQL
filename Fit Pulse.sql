@@ -3,6 +3,7 @@ create database if not exists fit_pulse;
 
 use fit_pulse;
 
+
 create table if not exists plano (
 	id_plano varchar(1) not null,
     nome_plano varchar(10) not null,
@@ -74,4 +75,13 @@ create table if not exists pagamento_aluno (
     constraint fk_pagamento_aluno foreign key (id_aluno) references aluno(id_aluno),
     constraint fk_aluno_pagamento foreign key (id_pagamento) references pagamento(id_pagamento)
     
+);
+
+create table if not exists imagem (
+	id_imagem varchar(10) not null,
+    nome_imagem VARCHAR(100) NOT NULL,
+    dados_imagem LONGBLOB NOT NULL,
+	
+    primary key(id_imagem)
+
 );
