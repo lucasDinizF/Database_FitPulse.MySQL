@@ -76,12 +76,3 @@ create table if not exists pagamento_aluno (
     constraint fk_aluno_pagamento foreign key (id_pagamento) references pagamento(id_pagamento)
     
 );
-
-create table if not exists imagem (
-	id_imagem varchar(10) not null,
-    nome_imagem VARCHAR(100) NOT NULL,
-    dados_imagem LONGBLOB NOT NULL,
-	
-    primary key(id_imagem)
-
-);
